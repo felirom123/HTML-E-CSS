@@ -1,0 +1,39 @@
+body
+    {
+        font-family: 'Times New Roman', Times, Serif;
+    }
+/* Configura;óes visuais da tabela, como contorno cor tamanho etc*/
+    table
+        {
+            border: 2px solid black;
+            width: 650px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        tr.tab
+            {
+                background-color: rgb(29, 71, 74);
+            }
+        tr.primeiro
+            {
+                background-color: rgb(10, 124, 111);
+            }
+        tr.segundo
+            {
+                background-color: rgb(63, 135,187);
+            }
+            /* para acessar qualquer elemento do html criar uma classe dentro do paragrafo 
+            ou da sua criacao para pdoer ser manipulado pelo css usando suas classes, aqui
+            centralizei a frase tabela de times.*/
+        .titulo
+            {
+                text-align: center;
+            }
+        td
+         {
+            border: 1px solid black;
+         }
+         img
+            {
+                width: 50%;
+            }
