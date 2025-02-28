@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8"><!--Linha as linhas da tabelas, e ajusta acentua;áo-->
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <!--Criando o nome do titulo q sera exibido em cima da aba do navegador-->
+    <title>Tabela</title>
+    <link rel="stylesheet" href="tablestyl.css">
+
+</head>
+<!--Introdução com tamanho da fonte em h1-->
+<h1><p class="titulo"> Tabela de times  </h1></p>
+
+<!--Hierarquia da tabela
+TABLE = tabela
+    TABLE ROW = LINHA DA TABELA
+        TABLE HEADER = CABEÇALHO
+        TABLE DATA = DADOS-->
+
+    <body>
+        <!--Criacao da tabela, tr para criar, class para criar a classe
+        apos cada  <th> ele se alinha a direita, como um cabecalho-->
+        <table>
+            <tr class="tab">
+
+                <th> <b> Imagem </b></th>
+                <th> <b> Posição </b></th>
+                <th> <b> Time </b></th>
+                <th> <b> Pontos </b></th>
+                <th> <b> Qtd. Jogos </b></th>
+                <th> <b> Qtd. de Vitorias </b></th>
+                <th> <b> Qtd. de derrotas </b></th>
+            </tr>
+
+            <tr class="primeiro">
+                <!-- o <a precisa de uma referencia para ser utilzado, o img precisa 
+                 do diretortio do download para achar a imagem-->
+                <td><a href="https://www.google.com/search?client=opera-gx&q=corinthians&sourceid=opera&ie=UTF-8&oe=UTF-8"><img src="imagens/Corinthians_simbolo.png" width="30" height="30">     </href></a></td>
+                <td> <u> 1 </u> </td>
+                <td> <a href="https://www.corinthians.com.br"> Corinthians </href></a></td>
+                <td> <u> 9 </u></td>
+                <td> <u> 3 </u></td>
+                <td> <u> 3 </u></td>
+                <td> <u> 0 </u></td>
+            </tr>
+
+            <tr class="segundo">
+                <td> <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwtMxNKTFg9GJNSszITAQALwoFMw&client=opera-gx&q=bahia&sourceid=opera&ie=UTF-8&oe=UTF-8"><img src="imagens/bahia.png" width="30" height="30"> </href></a></td>
+                <td> <u> 0 </u></td>
+                <td> <a href="https://www.esporteclubebahia.com.br"> Bahia </href></a></td>
+                <td> <u> 0 </u></td>
+                <td> <u> 0 </u></td>
+                <td> <u> 0 </u></td>
+                <td> <u> 0 </u></td>
+
+            </tr>
+                    <!-- Sempre q uwsar href para referenciar algo, deve se fecgar a tag-->
+            <tr class="terceiro">
+                <td><a href="https://www.google.com/search?client=opera-gx&sca_esv=3a00b5f4c73ad6fb&sxsrf=AHTn8zrMz7lcSau5KK3fxCKnCiA89nlSkQ:1740703578756&q=botafogo&source=lnms&fbs=ABzOT_BYhiZpMrUAF0c9tORwPGlsjfkTCQbVbkeDjnTQtijddCIwjuBvoXndi-OO1f8kXGUrQAK1bEIdN5wzK9JtNLp0dop-rYxSsCIh06lNteXpNfPNcQXYM-TgFsGpRUJl0XucwCX4kJKyY3GkWgkqhyFAjH2Kxoe6Hj_1ce-LxQ3dfubLSAZ8z3rFHH5j1WNTQwXmpssSRCzyufZENHFm-ofYKhl0Kg&sa=X&ved=2ahUKEwik_uGTkuWLAxU1jJUCHXchJesQ0pQJegQIFBAB&biw=1878&bih=926&dpr=1"><img src="imagens/Botafogo_de_Futebol_e_Regatas_logo.svg.png" width="30" height="30"> </href></a></td>
+                <td> <u> 0 </u></td>
+                <td> <a href="https://www.botafogo.com.br">Bota fogo</href></a></td>
+                <td> <u> 0 </u></td>
+                <td> <u> 0 </u></td>
+                <td> <u> 0 </u></td>
+                <td> <u> 0 </u></td>
+
+            </tr>
+            <tr class="quarto">
+                <td><a href="https://www.google.com/search?client=opera-gx&q=vasco&sourceid=opera&ie=UTF-8&oe=UTF-8"><img src="imagens/CRVascodaGama.png" width="30" height="30"> </href></a></td>
+                <td> <u> 0 </u></td>
+                <td> <a href="https://www.shopvasco.com.br/?srsltid=AfmBOopACYA9M6ww1vRXAVzqoc7snwUpPJUkkwXZs9zc55xttr2rrU9O"> Vasco </href></a></td>
+                <td> <u> 0 </u></td>
+                <td> <u> 0 </u></td>
+                <td> <u> 0 </u></td>
+                <td> <u> 0 </u></td>
+            </tr>
+
+            <tr class="">
+
+                <td><a href="https://www.google.com/search?client=opera-gx&q=flamengo&sourceid=opera&ie=UTF-8&oe=UTF-8"><img src="imagens/Flamengo-RJ_(BRA).png" width="30" height="30"> </href></a></td>
+                <td> <u> 0 </u></td>
+                <td> <a href="https://www.flamengo.com.br"> Flamengo </href></a></td>
+                <td> <u> 0 </u></td>
+                <td> <u> 0 </u></td>
+                <td> <u> 0 </u></td>
+                <td> <u> 0 </u></td>
+            </tr>
+        </table>
+
+    </body>
+</html>
