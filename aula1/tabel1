@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <!--Criando o nome do titulo q sera exibido em cima da aba do navegador-->
     <title>Tabela</title>
-    <link rel="stylesheet" href="tablestyl.css">
+    <link rel="stylesheet" href="tablesty.css">
 
 </head>
 <!--Introdução com tamanho da fonte em h1-->
@@ -18,10 +18,24 @@ TABLE = tabela
         TABLE DATA = DADOS-->
 
     <body>
+
+        <button type="button" onclick="document.getElementById('data_hora').innerHTML = Date()">
+            Exibe data e hora
+        </button>
+        <button type="button" onclick="document.getElementById('data_hora').style.fontSize = '35px'">
+            Aumente a fonte
+        </button>
+        <button type="button" onclick="document.getElementById('first').style.backgroundColor = 'green'">
+            Mude a cor
+        </button>
+        
+    
+    
+        <p id="data_hora"></p>
         <!--Criacao da tabela, tr para criar, class para criar a classe
         apos cada  <th> ele se alinha a direita, como um cabecalho-->
-        <table>
-            <tr class="tab">
+        <table class="tab">
+            <tr onmouseover="mudarCor(this)" onmouseout="voltarCor(this)">
 
                 <th> <b> Imagem </b></th>
                 <th> <b> Posição </b></th>
@@ -31,8 +45,16 @@ TABLE = tabela
                 <th> <b> Qtd. de Vitorias </b></th>
                 <th> <b> Qtd. de derrotas </b></th>
             </tr>
+            <script>
+                function mudarCor(linha){
+                    linha.style.backgroundColor = 'green'
+                }
+                function voltarCor(linha){
+                    linha.style.backgroundColor = ''
+                }
+            </script>
 
-            <tr class="primeiro">
+            <tr id="first" class="primeiro">
                 <!-- o <a precisa de uma referencia para ser utilzado, o img precisa 
                  do diretortio do download para achar a imagem-->
                 <td><a href="https://www.google.com/search?client=opera-gx&q=corinthians&sourceid=opera&ie=UTF-8&oe=UTF-8"><img src="imagens/Corinthians_simbolo.png" width="30" height="30">     </href></a></td>
@@ -44,7 +66,7 @@ TABLE = tabela
                 <td> <u> 0 </u></td>
             </tr>
 
-            <tr class="segundo">
+            <tr id="second" class="segundo">
                 <td> <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwtMxNKTFg9GJNSszITAQALwoFMw&client=opera-gx&q=bahia&sourceid=opera&ie=UTF-8&oe=UTF-8"><img src="imagens/bahia.png" width="30" height="30"> </href></a></td>
                 <td> <u> 0 </u></td>
                 <td> <a href="https://www.esporteclubebahia.com.br"> Bahia </href></a></td>
